@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.page-actions {
+    height: 40px;
+    background: linear-gradient(to bottom, #2ecc71, #27ae60);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 15px;
+}
+
+.page-action {
+    padding: 8px 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.toolbar {
+    height: 50px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 8px;
+}
+
+.toolbar-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toolbar-btn.active {
+    background: #d1d8e0;
+}
+
+.toolbar-divider {
+    width: 1px;
+    height: 30px;
+    background: #dee2e6;
+}
+
+.color-picker-wrapper {
+    position: relative;
+}
+
+.color-picker-wrapper input {
+    position: absolute;
+    opacity: 0;
+}
+
+.formula-bar-container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.address-display {
+    width: 70px;
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    text-align: center;
+}
+
+.formula-input {
+    flex: 1;
+    padding: 6px;
+}
+
+.spreadsheet-container {
+    height: calc(100vh - 170px);
+    overflow: auto;
+    background: #f8f9fa;
+}
+
+.corner-cell {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    background: #e9ecef;
+    z-index: 10;
+}
+
+.column-headers {
+    position: sticky;
+    top: 0;
+    left: 40px;
+    display: flex;
+}
+
+.column-header {
+    width: 100px;
+    height: 30px;
+    background: #e9ecef;
+    border: 1px solid #adb5bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-container {
+    display: flex;
+}
+
+.row-header {
+    width: 40px;
+    height: 30px;
+    background: #e9ecef;
+    border: 1px solid #adb5bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #dee2e6;
+    outline: none;
+}
+
+.sheet-tabs {
+    height: 40px;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}

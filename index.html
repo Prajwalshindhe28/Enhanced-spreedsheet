@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone - DFS with Cycle Detection</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-actions">
+    <div class="page-action">Home</div>
+    <div class="page-action">Insert</div>
+    <div class="page-action">Formulas</div>
+    <div class="page-action">Data</div>
+    <div class="page-action">Help</div>
+</div>
+
+<div class="toolbar">
+    <div class="toolbar-btn"><span class="material-icons">content_cut</span></div>
+    <div class="toolbar-btn"><span class="material-icons">content_copy</span></div>
+    <div class="toolbar-btn"><span class="material-icons">content_paste</span></div>
+
+    <div class="toolbar-divider"></div>
+
+    <select class="font-family">
+        <option>Arial</option>
+        <option selected>Calibri</option>
+        <option>Times New Roman</option>
+        <option>Courier New</option>
+    </select>
+
+    <select class="font-size">
+        <option>10</option>
+        <option>11</option>
+        <option selected>12</option>
+        <option>14</option>
+        <option>16</option>
+    </select>
+
+    <div class="toolbar-divider"></div>
+
+    <div class="toolbar-btn bold-btn"><span class="material-icons">format_bold</span></div>
+    <div class="toolbar-btn italic-btn"><span class="material-icons">format_italic</span></div>
+    <div class="toolbar-btn underline-btn"><span class="material-icons">format_underlined</span></div>
+
+    <div class="toolbar-divider"></div>
+
+    <div class="color-picker-wrapper">
+        <span class="material-icons toolbar-btn">format_color_text</span>
+        <input type="color" class="text-color">
+    </div>
+
+    <div class="color-picker-wrapper">
+        <span class="material-icons toolbar-btn">format_color_fill</span>
+        <input type="color" class="bg-color">
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <div class="toolbar-btn align-left"><span class="material-icons">format_align_left</span></div>
+    <div class="toolbar-btn align-center"><span class="material-icons">format_align_center</span></div>
+    <div class="toolbar-btn align-right"><span class="material-icons">format_align_right</span></div>
+</div>
+
+<div class="formula-bar-container">
+    <div class="address-display">A1</div>
+    <span class="material-icons">functions</span>
+    <input type="text" class="formula-input" placeholder="Enter formula (A1 * B1)">
+</div>
+
+<div class="spreadsheet-container">
+    <div class="corner-cell"></div>
+    <div class="column-headers"></div>
+    <div class="rows-container"></div>
+</div>
+
+<div class="sheet-tabs">
+    <div class="sheet-tab active">Sheet1</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
